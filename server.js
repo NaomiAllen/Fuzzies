@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 
 
-app.getMaxListeners('/fuzzies/new', (req, res)=>{
-    res.send('new');
+app.get('/fuzzies/new', (req, res)=>{
+    res.render('new.ejs');
 })
 
 
