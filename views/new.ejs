@@ -6,12 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>FuzZies</h1>
+    <h1>Fuzzies</h1>
     <form action="/fuzzies" method="POST">
         Breed: <input type="text" name= "name"/><br/>
-        Color: <input type="text" name= "color" /><br/>
-        Ready for adoption: <input type="checkbox" name="readyToAdopt" /><br/>
-        <input type="submit" name="" value="create fuzzy"/>
+        Location: <input type="text" name= "location" /><br/>
+        Male: <input type="checkbox" name="male" />
+        Female: <input type="checkbox" name="male" /><br/>
+        Desciption: <textarea id="description" name= description></textarea><br/>
+
+        <input type="submit" name="" value="Add Fuzzy"/>
     </form>
 </body>
 </html>
