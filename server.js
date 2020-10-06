@@ -1,13 +1,15 @@
 const express = require('express');
 const app = express();
+port= 3000
 
 
-app.get('/fuzzies/new', (req, res)=>{
+app.get('/', (req, res)=>{
     res.render('new.ejs');
-})
+    
+});
 
 
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log('I am Listening')
 })
