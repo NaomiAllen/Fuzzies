@@ -1,4 +1,5 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const app = express();
 port= 3000
 
@@ -13,6 +14,10 @@ app.post('/fuzzies/', (req,res)=>{
     res.send(req.body)
 })
 
+mongoose.connect('mongodb://localhost:27017/basiccrud',{useNewUrlParser: true});
+mongoose.connection.once('open', ()=>{
+    console.log('connected to mongo')
+});
 
 
 app.listen(port, ()=>{
